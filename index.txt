@@ -1,0 +1,26 @@
+﻿.. title: Welcome!
+.. slug: index
+.. date: 2017-06-21 07:45:17 UTC+03:00
+.. tags:
+.. category:
+.. link:
+.. description:
+.. type: text
+
+These are the results of an experimental oceanographic model, at a spondaneous time (from June 4th,2017 to June 6th,2017, in 48 hourly time-steps). The model is covering the area around Cyprus, in a nine (9) km grid (76 x 72 x 53 = 5472 cells).
+
+The perpose of this experiment is to point out the posible forecast improvements, after the inclusion of satellite originated sea surface temperatures (SST), over the initially produced results.
+
+.. figure:: /images/gen_map_2.jpg
+   :target: /images/gen_map_2.jpg?zz=1
+   :class: thumbnail
+   :alt: Area coverage and resolution.
+
+   
+The "standard" method used for satellite produced STT in numerical oceanographic models nowadays, is in the relaxation of the heat fluxes at the surface boundaries.
+   
+Satellite cloud-free data were produced by applying the `DINEOF <http://modb.oce.ulg.ac.be/mediawiki/index.php/DINEOF>`__ algorithm over the `EUMEDSAT <http://www.osi-saf.org/>`__ L3 data, available from `EMed & Black Sea SST <https://emed-bsea-sst.github.io/Data/>`__ site.
+
+.. admonition:: NOTICE
+      
+  The Author offers no warranty and accepts no liability in respect of these products. Author neither commits to nor guarantees the continuity, availability, or quality or suitability for any purpose. Downloading and using these products imply agreement to and acceptance of these terms.*

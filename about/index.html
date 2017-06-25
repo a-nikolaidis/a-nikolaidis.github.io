@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article# " lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<title>about | Modeling of the Sea around Cyprus</title>
+<link href="../assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/rst.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/code.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/colorbox.css" rel="stylesheet" type="text/css">
+<link href="../assets/css/theme.css" rel="stylesheet" type="text/css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
+<link rel="canonical" href="http://127.0.0.1:8000/about/">
+<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><meta name="author" content="Andreas Nikolaidis">
+<meta property="og:site_name" content="Modeling of the Sea around Cyprus">
+<meta property="og:title" content="about">
+<meta property="og:url" content="http://127.0.0.1:8000/about/">
+<meta property="og:description" content="The Model
+Oceanographic modeling of the area, is based on Princeton Ocean Model and specifically on a modified version of sbPOM.
+The main characteristics of this numerical, hydrodynamic model are
+
+it ">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2017-06-25T20:17:39+03:00">
+</head>
+<body style="padding-top: 10px;">
+<div class="container-fluid" id="container" style="margin: 0 auto;">
+    <div class="row-fluid" id="titlerow">
+    <div class="span12" id="titlecolumn">
+    <!-- Banner-like substance -->
+        <div class="titlebox" style="text-align: right;">
+        <h1 id="blog-title" style="margin: 0; padding: 0;">
+            <a href="http://127.0.0.1:8000/" title="Modeling of the Sea around Cyprus">Modeling of the Sea around Cyprus</a>
+        </h1>
+        
+        
+        <hr>
+</div>
+    <!-- End of banner-like substance !-->
+    <div class="row-fluid" id="contentrow">
+        <div class="span10" id="contentcolumn">
+            <!--Body content-->
+            
+<article class="post-text storypage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">about</a></h1>
+
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
+    <div>
+<dl class="docutils">
+<dt>The Model</dt>
+<dd>
+<p class="first">Oceanographic modeling of the area, is based on <a class="reference external" href="http://www.ccpo.odu.edu/POMWEB/">Princeton Ocean Model</a> and specifically on a modified version of <a class="reference external" href="http://imedea.uib-csic.es/users/toni/sbpom/">sbPOM</a>.
+The main characteristics of this numerical, hydrodynamic model are</p>
+<ul class="last simple">
+<li>it is a 'free surface' model ie the sea surface height is predictive parameter</li>
+<li>it uses sigma coordinates for better representation of bottom topography (53 sigma levels, in this case)</li>
+<li>it uses a different time step to solve two-dimensional (barotropic) and three - dimensional (baroclinic) equations (time splitting technique)</li>
+<li>it uses curvilinear orthogonal coordinates and finite differences over an "Arakawa-C" horizontal grid</li>
+<li>it integrates the Mellor--Yamada turbulent diffusion submodel, class 2.5 (Mellor and Yamada 1982) for the optimal calculation of the vertical mixing</li>
+<li>it uses Smagorinsky shape for the horizontal diffusion conditions calculations</li>
+</ul>
+</dd>
+<dt>How</dt>
+<dd>
+<p class="first">The model is running with boundary and initial conditions from Copernicus data base (EU), meteorological forcing from Open Skiron (for the winds) and from GFS model (NASA) for heat and water fluxes.</p>
+<p>Unique characteristics of this model, is that on every time step, besides the meteorological forcing, sea surface height and Ekman vertical layer (w) calulated independently, are also provided.</p>
+<p>Three runs are taking place:</p>
+<ul class="simple">
+<li>The first run, produces immediate 'restart' data ('cold start') from the original data</li>
+<li>The second is using the restart data as is ('hot start')</li>
+<li>In the third run, the top layer of the produced temperature field, has been replaced with the satellite sea surface temerature (SST) data</li>
+</ul>
+<p class="last">Furthermore, sound velocity field is been produced, for all time-steps.</p>
+</dd>
+<dt>What</dt>
+<dd>
+<p class="first">The results of the model's run, are shown in graphical form, in the top right menu, for surface, 100 m, 1000 m and 1500 m depths, after 1,6,12,30 and 48 hours.</p>
+<p><strong>Tip:</strong> Images can be viewed in high detail, if, after selecting one, right-click into it, and select 'view image' option.
+Clicking to the page's title, leads to the initial page.</p>
+<p>Data Interpolating Empirical Orthogonal Functions (<strong>DINEOF</strong>) is a special innovative technique, developed for the reconstruction of missing spatial data with successful application over satellite images.
+Since 1950, when Lorentz introduced the geographically weighted Principal Component Analysis (PCA), mostly known as empirical orthogonal functions (EOFs), many geophysical applications benefit of its usage.
+Specifically, PCA is defined as an orthogonal linear transformation that maps the data to a new coordinate system such that the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on. EOFs can present different physical meanings, like coherent spatial patterns with maximum variance, modes of energy, even just convenient mathematical abstractions, depending on the nature of the problem.
+For an extended description of DINEOF, and recent developments, the reader is referred to Beckers and Rixen (<em>2003</em>), Beckers et al. (<em>2006</em>), Alvera-Azcarate et al. (<em>2009,2011</em>) and Wang et al. (<em>2014</em>).</p>
+<p class="last">DINEOF algorithm application over the Eastern Mediterranean Sea on cloudy sea surface temperature (SST) satellite data first presented during the <a class="reference external" href="http://www.cyprusremotesensing.com/rscy2013/">First International Conference on Remote Sensing and Geoinformation of Environment</a> (<em>Nikolaidis et al.,2013</em>). Current version extends the algorithm coverage over the Black Sea region.</p>
+</dd>
+<dt>Why</dt>
+<dd>SST is a physical parameter commonly used in most oceanographic and meteorological applications (Giannakopoulos et al., 2004) and among others is a principal factor for relevant arithmetic model calibration, assimilation and initialization (Akylas et al., 2001; 2003; Akylas and Tombrou, 2005).
+It is beleived that incorporating the SST data, directly into the model there will be an improvement over the spatial - temporal results.</dd>
+</dl>
+<div class="admonition admonition-selected-bibliographical-references">
+<p class="first admonition-title">Selected bibliographical references</p>
+<p>Nikolaidis A., Georgiou G., Hadjimitsis D. and E. Akylas Applying DINEOF algorithm on cloudy sea-surface temperature satellite data over the eastern Mediterranean Sea, Proc. SPIE 8795, First International Conference on Remote Sensing and Geoinformation of the Environment (RSCy2013), 87950L, 8-10 April 2013, Paphos, Cyprus, <a class="reference external" href="http://link.springer.com/article/10.2478%2Fs13533-012-0148-1">10.1117/12.2029085</a></p>
+<p>Akylas E., Tombrou M., Lalas D. and S. Zilitinkevich, 2001: Surface fluxes under shear-free convevtion. Q.J.R.Meteorol.Soc., 127, pp. <a class="reference external" href="http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j2.pdf">1183-1197.</a></p>
+<p>Akylas E., Tsakos Y., Tombrou M. and D. Lalas, 2003: Considerations on minimum friction velocity. Q.J.R. Meteorol. Soc., 129, pp. <a class="reference external" href="http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j3.pdf">1929-1943</a></p>
+<p>Akylas E. and Tombrou M., 2005: Reconsidering a generalised interpolation between the Kansas type formulae and free convection forms. Boundary-Layer Met., 115, pp. 381 - 398. DOI: <a class="reference external" href="http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j6.pdf">10.1007/s10546-004-1426-3.</a></p>
+<p>Giannakopoulos C., Good P., Law K. S., Wang K-Y, Akylas E. and Koussis A., 2004: The parameterization of rainfall in an off-line chemical transport model. Atmospheric Science Letters, 5, pp. <a class="reference external" href="http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j4.pdf">82 - 88.</a></p>
+<p>Alvera-Azcarate, A., A. Barth, D. Sirjacobs, and J.-M. Beckers. "Enhancing Temporal Correlations in EOF Expansions for the Reconstruction of Missing Data Using DINEOF." Ocean Science Discussions 6, no. 2 (12 2009): 1547-568. doi:<a class="reference external" href="http://www.ocean-sci.net/5/475/2009/">10.5194/osd-6-1547-2009.</a></p>
+<p>Alvera-Azcarate, Aida, Charles Troupin, Alexander Barth, and Jean-Marie Beckers. "Comparison between Satellite and in Situ Sea Surface Temperature Data in the Western Mediterranean Sea." Ocean Dynamics 61, no. 6 (12 2011): 767-78. doi:<a class="reference external" href="http://link.springer.com/article/10.1007%2Fs10236-011-0403-x">10.1007/s10236-011-0403-x.</a></p>
+<p>Beckers, J. M., and M. Rixen. "EOF Calculations and Data Filling from Incomplete Oceanographic Datasets*." Journal of Atmospheric and Oceanic Technology 20, no. 12 (12 2003): 1839-856. doi:<a class="reference external" href="http://journals.ametsoc.org/doi/ref/10.1175/1520-0426%282003%29020%3C1839%3AECADFF%3E2.0.CO%3B2">10.1175/1520-0426(2003)0202.0.CO;2.</a></p>
+<p class="last">Wang, Yueqi, and Dongyan Liu. "Reconstruction of Satellite Chlorophyll-data Using a Modified DINEOF Method: A Case Study in the Bohai and Yellow Seas, China." International Journal of Remote Sensing 35, no. 1 (12, 2014): 204-17. <a class="reference external" href="https://www.researchgate.net/publication/262290799_Reconstruction_of_satellite_Chlorophyll-a_data_using_a_modified_DINEOF_Method_A_case_study_in_the_Bohai_and_Yellow_Seas_China">doi:10.1080/01431161.2013.866290.</a></p>
+</div>
+</div>
+    </div>
+    
+
+</article><!--End of body content--><hr>
+<div class="footerbox">
+                Authorized by © 2017   Andreas Nikolaidis <br>
+</div>
+        </div>
+        <div class="span2" id="sidebar">
+            <!--Sidebar content-->
+            <ul class="unstyled">
+<li>
+            
+                <li>
+<a href="#">About</a>
+            </li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Temperature<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Temperature/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Temperature/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Temperature/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Temperature/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Temperature/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Temperature/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Salinity<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Salinity/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Salinity/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Salinity/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Salinity/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Salinity/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Salinity/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Currents<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Currents/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Currents/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Currents/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Currents/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Currents/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Currents/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Density<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Density/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Density/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Density/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Density/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Density/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Density/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Mixed Layer Depth<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Mixed_Layer_Depth/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Sound Velocity<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Sound_Velocity/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Sound_Velocity/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Sound_Velocity/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Sound_Velocity/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Sound_Velocity/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Sound_Velocity/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Drifter (in-situ) comparisons<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Drifters/ARGOS_6903221/">ARGOS_6903221</a>
+                    </li>
+<li>
+<a href="../galleries/Drifters/ARGOS_6903222/">ARGOS_6903222</a>
+            </li>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown">Model without vs with satellite data<b class="caret"></b></a>
+            <ul class="dropdown-menu">
+<li>
+<a href="../galleries/Model_vs_Model/after_01_hour/">after 1 hour</a>
+                    </li>
+<li>
+<a href="../galleries/Model_vs_Model/after_06_hours/">after 6 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Model_vs_Model/after_12_hours/">after 12 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Model_vs_Model/after_24_hours/">after 24 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Model_vs_Model/after_30_hours/">after 30 hours</a>
+                    </li>
+<li>
+<a href="../galleries/Model_vs_Model/after_48_hours/">after 48 hours</a>
+            </li>
+</ul>
+</li>
+<li>
+<a href="../links/index.html">Links</a>
+
+            </li>
+<li>
+            
+            
+            </ul>
+<!--End of sidebar content-->
+</div>
+    </div>
+    </div>
+    </div>
+</div>
+
+            <script src="../assets/js/jquery.min.js"></script><script src="../assets/js/bootstrap.min.js"></script><script src="../assets/js/moment-with-locales.min.js"></script><script src="../assets/js/fancydates.js"></script><script src="../assets/js/jquery.colorbox-min.js"></script><script>jQuery("a.image-reference").colorbox({rel:"gal",maxWidth:"100%",maxHeight:"100%",scalePhotos:true});</script>
+</body>
+</html>

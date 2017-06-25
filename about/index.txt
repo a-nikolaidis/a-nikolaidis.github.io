@@ -1,0 +1,71 @@
+﻿=================================
+
+The Model
+  Oceanographic modeling of the area, is based on `Princeton Ocean Model <http://www.ccpo.odu.edu/POMWEB/>`__ and specifically on a modified version of `sbPOM <http://imedea.uib-csic.es/users/toni/sbpom/>`__.
+  The main characteristics of this numerical, hydrodynamic model are
+  
+  - it is a 'free surface' model ie the sea surface height is predictive parameter
+  
+  - it uses sigma coordinates for better representation of bottom topography (53 sigma levels, in this case)
+  
+  - it uses a different time step to solve two-dimensional (barotropic) and three - dimensional (baroclinic) equations (time splitting technique)
+
+  - it uses curvilinear orthogonal coordinates and finite differences over an "Arakawa-C" horizontal grid
+  
+  - it integrates the Mellor--Yamada turbulent diffusion submodel, class 2.5 (Mellor and Yamada 1982) for the optimal calculation of the vertical mixing
+  
+  - it uses Smagorinsky shape for the horizontal diffusion conditions calculations 
+  
+How
+  The model is running with boundary and initial conditions from Copernicus data base (EU), meteorological forcing from Open Skiron (for the winds) and from GFS model (NASA) for heat and water fluxes.
+  
+  Unique characteristics of this model, is that on every time step, besides the meteorological forcing, sea surface height and Ekman vertical layer (w) calulated independently, are also provided.
+  
+  Three runs are taking place: 
+  
+  - The first run, produces immediate 'restart' data ('cold start') from the original data
+  
+  - The second is using the restart data as is ('hot start')
+  
+  - In the third run, the top layer of the produced temperature field, has been replaced with the satellite sea surface temerature (SST) data
+  
+  Furthermore, sound velocity field is been produced, for all time-steps.
+  
+What
+  The results of the model's run, are shown in graphical form, in the top right menu, for surface, 100 m, 1000 m and 1500 m depths, after 1,6,12,30 and 48 hours.
+  
+  **Tip:** Images can be viewed in high detail, if, after selecting one, right-click into it, and select 'view image' option.
+  Clicking to the page's title, leads to the initial page.
+  
+  Data Interpolating Empirical Orthogonal Functions (**DINEOF**) is a special innovative technique, developed for the reconstruction of missing spatial data with successful application over satellite images.
+  Since 1950, when Lorentz introduced the geographically weighted Principal Component Analysis (PCA), mostly known as empirical orthogonal functions (EOFs), many geophysical applications benefit of its usage.
+  Specifically, PCA is defined as an orthogonal linear transformation that maps the data to a new coordinate system such that the greatest variance by any projection of the data comes to lie on the first coordinate (called the first principal component), the second greatest variance on the second coordinate, and so on. EOFs can present different physical meanings, like coherent spatial patterns with maximum variance, modes of energy, even just convenient mathematical abstractions, depending on the nature of the problem.
+  For an extended description of DINEOF, and recent developments, the reader is referred to Beckers and Rixen (*2003*), Beckers et al. (*2006*), Alvera-Azcarate et al. (*2009,2011*) and Wang et al. (*2014*).
+
+  DINEOF algorithm application over the Eastern Mediterranean Sea on cloudy sea surface temperature (SST) satellite data first presented during the `First International Conference on Remote Sensing and Geoinformation of Environment <http://www.cyprusremotesensing.com/rscy2013/>`__ (*Nikolaidis et al.,2013*). Current version extends the algorithm coverage over the Black Sea region.
+
+Why
+  SST is a physical parameter commonly used in most oceanographic and meteorological applications (Giannakopoulos et al., 2004) and among others is a principal factor for relevant arithmetic model calibration, assimilation and initialization (Akylas et al., 2001; 2003; Akylas and Tombrou, 2005).
+  It is beleived that incorporating the SST data, directly into the model there will be an improvement over the spatial - temporal results.
+
+
+
+.. admonition:: Selected bibliographical references
+   
+  Nikolaidis A., Georgiou G., Hadjimitsis D. and E. Akylas Applying DINEOF algorithm on cloudy sea-surface temperature satellite data over the eastern Mediterranean Sea, Proc. SPIE 8795, First International Conference on Remote Sensing and Geoinformation of the Environment (RSCy2013), 87950L, 8-10 April 2013, Paphos, Cyprus, `10.1117/12.2029085 <http://link.springer.com/article/10.2478%2Fs13533-012-0148-1>`__
+
+  Akylas E., Tombrou M., Lalas D. and S. Zilitinkevich, 2001: Surface fluxes under shear-free convevtion. Q.J.R.Meteorol.Soc., 127, pp. `1183-1197. <http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j2.pdf>`__
+
+  Akylas E., Tsakos Y., Tombrou M. and D. Lalas, 2003: Considerations on minimum friction velocity. Q.J.R. Meteorol. Soc., 129, pp. `1929-1943 <http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j3.pdf>`__
+
+  Akylas E. and Tombrou M., 2005: Reconsidering a generalised interpolation between the Kansas type formulae and free convection forms. Boundary-Layer Met., 115, pp. 381 - 398. DOI: `10.1007/s10546-004-1426-3. <http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j6.pdf>`__
+  
+  Giannakopoulos C., Good P., Law K. S., Wang K-Y, Akylas E. and Koussis A., 2004: The parameterization of rainfall in an off-line chemical transport model. Atmospheric Science Letters, 5, pp. `82 - 88. <http://evangelosakylas.weebly.com/uploads/8/7/3/4/8734654/j4.pdf>`__
+
+  Alvera-Azcarate, A., A. Barth, D. Sirjacobs, and J.-M. Beckers. "Enhancing Temporal Correlations in EOF Expansions for the Reconstruction of Missing Data Using DINEOF." Ocean Science Discussions 6, no. 2 (12 2009): 1547-568. doi:`10.5194/osd-6-1547-2009. <http://www.ocean-sci.net/5/475/2009/>`__
+
+  Alvera-Azcarate, Aida, Charles Troupin, Alexander Barth, and Jean-Marie Beckers. "Comparison between Satellite and in Situ Sea Surface Temperature Data in the Western Mediterranean Sea." Ocean Dynamics 61, no. 6 (12 2011): 767-78. doi:`10.1007/s10236-011-0403-x. <http://link.springer.com/article/10.1007%2Fs10236-011-0403-x>`__
+
+  Beckers, J. M., and M. Rixen. "EOF Calculations and Data Filling from Incomplete Oceanographic Datasets*." Journal of Atmospheric and Oceanic Technology 20, no. 12 (12 2003): 1839-856. doi:`10.1175/1520-0426(2003)0202.0.CO;2. <http://journals.ametsoc.org/doi/ref/10.1175/1520-0426%282003%29020%3C1839%3AECADFF%3E2.0.CO%3B2>`__
+
+  Wang, Yueqi, and Dongyan Liu. "Reconstruction of Satellite Chlorophyll-data Using a Modified DINEOF Method: A Case Study in the Bohai and Yellow Seas, China." International Journal of Remote Sensing 35, no. 1 (12, 2014): 204-17. `doi:10.1080/01431161.2013.866290. <https://www.researchgate.net/publication/262290799_Reconstruction_of_satellite_Chlorophyll-a_data_using_a_modified_DINEOF_Method_A_case_study_in_the_Bohai_and_Yellow_Seas_China>`__
