@@ -9,7 +9,7 @@
 
 These are the results of an experimental oceanographic model, at a spondaneous time (from June 4th,2017 to June 6th,2017, in 48 hourly time-steps). The model is covering the area around Cyprus, in a nine (9) km grid (76 x 72 x 53 = 5472 cells).
 
-The perpose of this experiment is to point out the posible forecast improvements, after the inclusion of satellite originated sea surface temperatures (SST), over the initially produced results.
+The purpose of this experiment is to point out the posible forecast improvements, after the inclusion of satellite originated sea surface temperatures (SST), over the initially produced results.
 
 .. figure:: /images/gen_map_2.jpg
    :target: /images/gen_map_2.jpg?zz=1

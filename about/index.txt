@@ -4,7 +4,7 @@ The Model
   Oceanographic modeling of the area, is based on `Princeton Ocean Model <http://www.ccpo.odu.edu/POMWEB/>`__ and specifically on a modified version of `sbPOM <http://imedea.uib-csic.es/users/toni/sbpom/>`__.
   The main characteristics of this numerical, hydrodynamic model are
   
-  - it is a 'free surface' model ie the sea surface height is predictive parameter
+  - it is a 'free surface' model i.e. the sea surface height is predictive parameter
   
   - it uses sigma coordinates for better representation of bottom topography (53 sigma levels, in this case)
   
@@ -19,7 +19,7 @@ The Model
 How
   The model is running with boundary and initial conditions from Copernicus data base (EU), meteorological forcing from Open Skiron (for the winds) and from GFS model (NASA) for heat and water fluxes.
   
-  Unique characteristics of this model, is that on every time step, besides the meteorological forcing, sea surface height and Ekman vertical layer (w) calulated independently, are also provided.
+  Unique characteristics of this model, is that on every time step, besides the meteorological forcing, sea surface height and Ekman vertical layer (w) is calulated independently, are also provided.
   
   Three runs are taking place: 
   
@@ -34,7 +34,7 @@ How
 What
   The results of the model's run, are shown in graphical form, in the top right menu, for surface, 100 m, 1000 m and 1500 m depths, after 1,6,12,30 and 48 hours.
   
-  **Tip:** Images can be viewed in high detail, if, after selecting one, right-click into it, and select 'view image' option.
+  **Tip:** Images can be viewed in high detail, by selecting one, right-click into it, and select 'view image' option.
   Clicking to the page's title, leads to the initial page.
   
   Data Interpolating Empirical Orthogonal Functions (**DINEOF**) is a special innovative technique, developed for the reconstruction of missing spatial data with successful application over satellite images.
